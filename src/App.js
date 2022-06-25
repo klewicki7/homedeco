@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import MyNavBar from './components/MyNavBar';
+import {
+  Routes,
+  BrowserRouter,
+  Route,
+} from "react-router-dom";
+import { HomeScreen } from './containers/Home'
+import { MarketScreen } from './containers/Market'
+import store from './store';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistor } from './store';
+
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <React.StrictMode>
+       {/*  <Routes>
+          <Route path="expenses" element={<HomeScreen />} />
+          <Route path="invoices" element={<MarketScreen />} />
+        </Routes> */}
+      </React.StrictMode>
+    </BrowserRouter>
   );
 }
 
