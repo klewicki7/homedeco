@@ -1,13 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import { useDispatch } from 'react-redux';
+import React from 'react';
+import NavBar from './redux/components/navBar/NavBar'
+import Home from './redux/components/home/Home'
+import {Route, Routes, Navigate} from "react-router-dom";
+import NotFoundPages from './redux/components/NotFoundPages'
+import Market from './redux/components/market/Market'
+//import { useDispatch, useSelector} from 'react-redux';
 
 function App() {
-  const dispatch = useDispatch()
-  const state = useSelector()
+  /* const dispatch = useDispatch()
+  const state = useSelector() */
   return (
     <div className="App">
-      //components
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/market' element={<Market/>}/>
+        <Route path="/*" element={<NotFoundPages/>}/>
+      </Routes>
     </div>
   );
 }

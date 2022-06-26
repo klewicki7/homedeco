@@ -1,15 +1,16 @@
-import { VIEW } from "../actions/Variables"
+import { SUMA } from "../actions/Variables"
 
 
 const initialState = {
-    
+    count: 0,
 }
 
 export default function root(state = initialState, action){
     switch (action.type) {
-        case VIEW:
+        case SUMA:
         return {
-            
+            ...state,
+            count: state.count + 1
         }
         default:
         return {...state}

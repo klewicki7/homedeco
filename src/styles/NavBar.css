@@ -1,0 +1,26 @@
+:root {
+    --main-black: black;
+    --main-white: white;
+    --main-brown: #834a35;
+    --main-brown-ligth: #a87563;
+}
+
+.containerNav {
+    background: var(--main-brown);
+    height: 100px;
+}
+
+.containerTypes {
+    background: var(--main-brown-ligth);
+    height: 40px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

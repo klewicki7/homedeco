@@ -1,1 +1,1 @@
-export let VIEW = 'VIEW'
+export let SUMA = 'SUMA'
