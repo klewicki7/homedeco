@@ -15,16 +15,14 @@ export default function NavBar() {
           <Contactos/>
         </div>
 
-        <div>
+        <div className='busqueda'>
           <div className='logo'>
             <img src={logo} alt='logo' className='img'/>
           </div>
-
-          <div className='search'>
-            <Search/>
+          <div>
+            <Search />
           </div>
-
-          <div className='carroCuenta'>
+          <div>
             <CarroCuenta/>
           </div>
         </div>
