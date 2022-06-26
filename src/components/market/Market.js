@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {suma} from '../../actions/Actions'
+import {suma} from '../../redux/actions/Actions'
 import {useDispatch, useSelector} from 'react-redux'
 
 export default function Market() {
