@@ -1,10 +1,5 @@
 import React from 'react'
 import logo from '../../image.jpg'
-import '../../styles/NavBar.css'
-import Search from './Search'
-import Contactos from './Contactos'
-import CarroCuenta from './CarroCuenta'
-import VariedadProductos from './VariedadProductos'
 import { Navbar, Nav, Image, Form, FormControl, Button, Container } from 'react-bootstrap'
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
@@ -66,7 +61,6 @@ export default function NavBar() {
                 Mi Carrito</Nav.Link>
             </Box>
           </Nav>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>
