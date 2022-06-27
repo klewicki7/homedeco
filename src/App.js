@@ -6,6 +6,7 @@ import Market from './components/market/Market'
 import Sillones from './pages/Sillones'
 import Home from './pages/Home';
 import BelowNavbar from './components/belowNavbar/BelowNavbar';
+import Footer from './pages/Footer';
 
 //import { useDispatch, useSelector} from 'react-redux';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/sillones' element={<Sillones/>}/>
         <Route path='/market' element={<Market />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
